@@ -1,7 +1,12 @@
 {% extends "horizon/common/_modal_form.html" %}
 {% load i18n %}
 
-{% block modal-header %}{% trans "Log In" %}{% endblock %}
+{% block modal-header %}
+  <center>
+    <a href="{% url horizon.sina.views.login %}" class="btn btn-primary">Login with Sina</a>
+    <br>&nbsp;<br>- or -<br>&nbsp;<br>
+  </center>
+{% trans "Log In" %}{% endblock %}
 {% block modal_class %}login {% if hide %}modal hide{% endif %}{% endblock %}
 
 {% block form_action %}{% url login %}{% endblock %}
