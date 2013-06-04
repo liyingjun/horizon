@@ -13,6 +13,12 @@ SINA_APP_SECRET = ""
 SINA_SCOPE = "email"
 # The user must followed each other with this user with id SINA_GROUP_ID.
 SINA_GROUP_ID = ""
+
+# Intergration with tencent weibo
+TENCENT_APP_ID = ""
+TENCENT_APP_SECRET = ""
+TENCENT_GROUP_ID = ""
+
 # The keystone admin user name.
 ADMIN_USER = ""
 # The keystone admin tenant name.

@@ -141,13 +141,15 @@ INSTALLED_APPS = (
     'openstack_dashboard.dashboards.admin',
     'openstack_dashboard.dashboards.settings',
     'openstack_auth',
+    'horizon.common',
     'horizon.sina',
+    'horizon.tencent',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 AUTHENTICATION_BACKENDS = ('openstack_auth.backend.KeystoneBackend',
-                           'horizon.sina.backend.SinaBackend')
-AUTH_PROFILE_MODULE = 'horizon.sina.SinaProfile'
+                           'horizon.common.backend.ExternalBackend')
+AUTH_PROFILE_MODULE = 'horizon.common.ExternalProfile'
 MESSAGE_STORAGE = 'django.contrib.messages.storage.cookie.CookieStorage'
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
