@@ -35,6 +35,7 @@ urlpatterns = patterns('',
     url(r'^auth/', include('openstack_auth.urls')),
     url(r'sina/', include('horizon.sina.urls')),
     url(r'tencent/', include('horizon.tencent.urls')),
+    url(r'linkedin/', include('horizon.linkedin.urls')),
     url(r'', include(horizon.urls))
 )
 

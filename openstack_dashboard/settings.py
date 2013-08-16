@@ -144,6 +144,7 @@ INSTALLED_APPS = (
     'horizon.common',
     'horizon.sina',
     'horizon.tencent',
+    'horizon.linkedin',
 )
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'

@@ -19,6 +19,13 @@ TENCENT_APP_ID = ""
 TENCENT_APP_SECRET = ""
 TENCENT_GROUP_ID = ""
 
+# Intergration with linkedin
+LINKEDIN_APP_KEY = ""
+LINKEDIN_APP_SECRET = ""
+# Random string
+LINKEDIN_STATE = ""
+LINKEDIN_GROUP_ID = ""
+
 # The keystone admin user name.
 ADMIN_USER = ""
 # The keystone admin tenant name.
